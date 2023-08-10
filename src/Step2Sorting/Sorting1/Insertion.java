@@ -12,13 +12,13 @@ public class Insertion {
 
     public static void sort(int[] arr){
         // insertion sort
-        for(int i = 1;i < arr.length-1;i++){
+        for(int i=1;i<arr.length;i++){
+            int temp = arr[i];
             int j;
-            int curr = arr[i];
-            for(j = i-1;j>=0 && curr < arr[j];j--){
+            for(j=i-1;j>=0 && arr[j] > temp;j--){
                 arr[j+1] = arr[j];
             }
-            arr[j+1] = curr;
+            arr[j+1] = temp;
         }
     }
 }

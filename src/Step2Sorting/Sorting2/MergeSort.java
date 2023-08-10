@@ -42,6 +42,7 @@ public class MergeSort {
             temp[k] = left[i];
             i++;k++;
         }
+
         while (j<right.length){
             temp[k] = right[j];
             j++;k++;
