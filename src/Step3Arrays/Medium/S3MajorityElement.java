@@ -1,11 +1,13 @@
 package Step3Arrays.Medium;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class S3MajorityElement {
     public static void main(String[] args) {
 
     }
+
     // Moore's Voting Algorithm
     public static int majorityElementO(int[] nums) {
         int count = 0;
